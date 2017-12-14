@@ -1,0 +1,37 @@
+{% extends '_template.html.twig' %}
+
+{% block itemPageLinkStyle %}
+    current_page
+{% endblock %}
+
+{% block main %}
+    <hr>
+    <h1>Items in store area</h1>
+
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Price</th>
+
+        </tr>
+        <tr>
+            {% for name in names %}
+            <td>{{ name.id }}</td>
+
+
+            <td> {{ name.description }}</td>
+
+
+            <td> {{ name.price }}</td>
+
+
+
+
+        </tr>
+
+        {% endfor %}
+    </table>
+
+{% endblock %}

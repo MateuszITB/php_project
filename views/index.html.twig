@@ -1,0 +1,25 @@
+{% extends '_template.html.twig' %}
+
+{% block homePageLinkStyle %}
+    current_page
+{% endblock %}
+
+{% block main %}
+    <h1>Experience the danger and beauty of competitive racing at the limit with the most comprehensive automotive game ever made.</h1>
+    <hr>
+
+
+    <div class="column_container">
+        <section class="1">
+            <u>NEWS</u>
+        </section>
+
+        Forza Motorsport 7<br>
+        <p>Available now!</p><br>
+        <a href="/index.php?action=store" class="{% block storePageLinkStyle %}{% endblock %}">Buy now</a><br>
+    <img id="bodypic" src="images/body pic.jpg">
+        <p>Also you can try out the Forza Motorsport 7 Demo for both Xbox One and Windows 10 PC available now!!</p>
+
+    </div>
+
+{% endblock %}

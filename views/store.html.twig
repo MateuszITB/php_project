@@ -1,0 +1,36 @@
+{% extends '_template.html.twig' %}
+
+{% block storePageLinkStyle %}
+current_page
+{% endblock %}
+{% block main %}
+
+    <h1>Store</h1>
+    <hr>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Price</th>
+
+        </tr>
+        <tr>
+            {% for name in names %}
+            <td>{{ name.id }}</td>
+
+
+            <td> {{ name.description }}</td>
+
+
+            <td> {{ name.price }}</td>
+
+
+
+
+        </tr>
+
+        {% endfor %}
+    </table>
+{% endblock %}
+
+

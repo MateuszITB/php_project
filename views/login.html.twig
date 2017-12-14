@@ -1,0 +1,28 @@
+{% extends '_template.html.twig' %}
+
+{% block loginPageLinkStyle %}
+    current_page
+{% endblock %}
+
+{% block main %}
+    <h1>Please login</h1>
+        <hr>
+
+
+    <form method ="POST" action ="index.php" class="form">
+
+        <form class="form">
+                <input type="hidden" name="action" value="processLogin">
+            <fieldset class="field">
+
+                <table class="table">
+                    <tr class="tr"><td class="td"><label for="login" class="label">Login:</label></td><td class="td"><input type="text" name="username" size="15" required /></td></tr>
+                    <tr class="tr"><td class="td"><label for="password" class="label">Password: </label></td><td class="td"><input type="password" name="password" size="15" required/></td></tr>
+                    <tr class="tr"><td class="td"><input type="submit" value="login" /></td></tr>
+                </table>
+            </fieldset>
+        </form>
+
+
+
+{% endblock %}

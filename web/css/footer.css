@@ -1,0 +1,14 @@
+footer {
+    background-color: #FF69B4;
+    color: black;
+    padding: 0.5rem;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: 0.1rem solid;
+    border-radius: 15px;
+    background-image: radial-gradient(pink, deeppink);
+
+
+
+}
